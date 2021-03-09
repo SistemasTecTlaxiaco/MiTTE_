@@ -20,4 +20,4 @@ Si deseas conocer más acerca de este proyecto te invitamos que visites nuestra 
 | [David Juan Feria Ortiz](https://github.com/DavidFeria01)    | Tester :mag: |
 
 ***
-´Sé un criterio de calidad. Algunas personas no están acostumbradas a un ambiente donde se espera la excelencia.~Steve Jobs´
+**_Sé un criterio de calidad. Algunas personas no están acostumbradas a un ambiente donde se espera la excelencia.~Steve Jobs_**
