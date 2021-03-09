@@ -1,5 +1,5 @@
 *BIENVENID@*
-![Logo Empresa](https://github.com/SistemasTecTlaxiaco/MiTTE_/blob/main/Wiki-imagenes/ByteTown.png)
+![BIENVENIDOS](https://github.com/SistemasTecTlaxiaco/MiTTE_/blob/main/Wiki-imagenes/bienvenido2.png)
 
 # MiTTE te da la Bienvenida a su Repositorio👋
 
