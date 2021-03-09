@@ -10,8 +10,10 @@ Si deseas conocer más acerca de este proyecto te invitamos que visites nuestra 
 ![Logo Empresa](https://github.com/SistemasTecTlaxiaco/MiTTE_/blob/main/Wiki-imagenes/ByteTown.png)  ![Logotipo Proyecto](https://github.com/SistemasTecTlaxiaco/MiTTE_/blob/main/Wiki-imagenes/MiTTE4.png)
 ***
 
-
 ## PARTICIPANTES DEL PROYECTO
 | *Nombre*                      |  *Rol* |
 | --- | --- |
 | [Jaciel García Santiago](https://github.com/Jaci14)         | Líder y programador :computer: |
+| [Marcos Jonathan García Núñez](https://github.com/MarcosJonathan17)   | Diseñador :sparkles:|
+| [Antonio Cruz Chávez](https://github.com/antoniio)           | Analista :question:|
+| [David Juan Feria Ortiz](https://github.com/DavidFeria01)    | Tester :mag: |
