@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <style type="text/css">
@@ -64,12 +65,8 @@ footer{
    <header >
  
 
-   <?php
-       //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta20="imagen/tec.svg";
-        ?>
-        
-        <img  style="width:200px;height:100px;"  src="<?php echo $ruta20; ?>">
+           
+        <img  style="width:200px;height:100px;"  src="imagen/tec.svg">
    </header>
 
     <div id="nav">
@@ -81,9 +78,9 @@ footer{
         <th>
         <p style="">     
 
-        <div  class= "center" text-aling="center"style="font-size:70%;"><?php echo $this->mensaje;?></div>
+        <div  class= "center" text-aling="center"style="font-size:70%;"></div>
         <div text-aling="center"style="font-size:70%;">Registro de Usuario 
-<form style="font-size:100%;" action="<?php echo constant('URL'); ?>nuevo/registrarAlumno"  method="POST">
+<form style="font-size:100%;" action="http://localhost/Proyecto-mytec/nuevo/registrarAlumno"  method="POST">
 
 
                 <slavel form="nombre"></lavel><br>
@@ -107,7 +104,7 @@ footer{
             <br>
              </br>
             <section id=sec>  
-            <a  href="<?php echo constant('URL'); ?>main"> <b >Log in</b> </a> 
+            <a  href="http://localhost/Proyecto-mytec/main"> <b >Log in</b> </a> 
             </section>
 
 
