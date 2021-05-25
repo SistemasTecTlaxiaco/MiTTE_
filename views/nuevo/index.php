@@ -1,56 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <style type="text/css">
   .btn{
   
-  width: 200px;
-  height:20px;
-  background-color: #BC4040;
-  color: #ffffff;
-  border-radius: 6px;
-  font-size:60%
+    width: 300px;
+    height:20px;
+    background-color: #BC4040;
+    color: #ffffff;
+    border-radius: 6px;
 
-}
-#sec{
-  background: #4BA2EF;
-    
-  width: 200px;
-  height:20px;
-  background-color: #205da1;
-  color: #ffffff;
-  border-radius: 6px;
-  font-size:60%;
-  text-align: center;
-}
-
-body{
-    background: #9E9E9E;
-    
-    font-family: "Soberana", "Arial";
-    font-size: 2em;
-}
+  }
   .tabla{
     position:center;
     top:8em;
   }
-  header{
-  background: #3C4D5F;
-    max-width: 1390px;
-    min-height: 100px;
-    text-align: left;
-    vertical-align: top;
-    padding: 5px;
-   
+  #nav{
+    background-color: #fcfcfc;
+    width: 700px;
+    height:300px;
+    text-align:center;
+    margin: 0 auto;
+    padding: 20px 0;
 }
-footer{
-  background: #3C4D5F;
-  max-width: 1385px;
-    min-height: 100px;
-    padding: 0.25em;
-    text-align: center;
-}
-
 </style>
 <head>
 
@@ -58,16 +29,16 @@ footer{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <link rel="stylesheet" href="public/css/registro.css">
 </head>
 <body >
 
-   <header >
- 
-
-           
-        <img  style="width:200px;height:100px;"  src="imagen/tec.svg">
-   </header>
+  <!-- <?php
+   $ruta="imagen/1.jpeg";
+   ?>
+   <img style="windth:1565px;height: 400px;"; src="<?php echo $ruta; ?>"> -->
+    
+    <?php require 'views/header.php'; ?>
 
     <div id="nav">
       <br>
@@ -76,36 +47,36 @@ footer{
         <tr>
    
         <th>
-        <p style="">     
+      
+<?php echo $this->mensaje;?>
 
-        <div  class= "center" text-aling="center"style="font-size:70%;"></div>
-        <div text-aling="center"style="font-size:70%;">Registro de Usuario 
-<form style="font-size:100%;" action="http://localhost/Proyecto-mytec/nuevo/registrarAlumno"  method="POST">
+<form action="<?php echo constant('URL'); ?>nuevo/registrarAlumno"  method="POST">
 
+<label form="registrar">Registro de Usuario</label>
 
+<p>
                 <slavel form="nombre"></lavel><br>
-                <input type="text" name="nombre" id="" placeholder="Nombre"  />
-            <br>
-                <lavel form="apellido"></lavel><br>
-                <input type="text" name="apellido" id="" placeholder="Apellido"  />
-             <br>
-                <lavel form="telefono"></lavel><br>
-                    <input type="text" name="telefono" id="" placeholder="Telefono" >
-          <br>
-                <lavel form="email"></lavel><br>
-                <input type="email" name="email" id="" placeholder="Correo Electronico"  />
-           <br>
-                <lavel form="pass"></lavel><br>
-                <input type="password" name="pass" id="" placeholder="Contraseña"  />
+                <input type="text" name="nombre" id="" placeholder="Nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required/>
             </p>
-  
-            <button class="btn" type="submit" id="submit" value="Registrar Usuario"> Registrar Usuario</p> </a>
-            </button>   
-            <br>
-             </br>
-            <section id=sec>  
-            <a  href="http://localhost/Proyecto-mytec/main"> <b >Log in</b> </a> 
-            </section>
+            <p>
+                <lavel form="apellido"></lavel><br>
+                <input type="text" name="apellido" id="" placeholder="Apellido" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required/>
+            </p>
+            <p>
+                <lavel form="telefono"></lavel><br>
+                    <input type="text" name="telefono" id="" placeholder="Telefono" required>
+            </p>
+            <p>
+                <lavel form="email"></lavel><br>
+                <input type="email" name="email" id="" placeholder="Correo Electronico" pattern="^[a-zA-Z0-9.!#$%&’+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$" required/>
+            </p>
+            <p>
+                <lavel form="password"></lavel><br>
+                <input type="password" name="pass" id="" placeholder="Contraseña"  required/>
+            </p>
+</br>     
+  <input class="btn" type="submit"  value="Iniciar Sesion" > 
+</form>
 
 
  
@@ -117,9 +88,13 @@ footer{
    <br>
 .
 </br>
+<br>
+.
+</br>
+<br>
+.
+</br>
 
-    <footer>
-
-    </footer>
+    <?php require 'views/footer.php'; ?>
 </body>
 </html>
