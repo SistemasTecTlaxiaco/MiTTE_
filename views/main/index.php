@@ -25,6 +25,10 @@
   font-size:90%;
   text-align: center;
 }
+.panel{
+  color: black;
+
+}
 </style>
 <head>
 
@@ -35,7 +39,7 @@
     <link rel="stylesheet" href="public/css/estilos.css">
 </head>
 <body >
-
+<a class="panel" href="<?php echo constant('URL'); ?>principal"  type="submit" id="submit" value="Registrar Usuario"> <p >Ir a Panel</p> </a>
   <!-- <?php
    $ruta="imagen/1.jpeg";
    ?>
