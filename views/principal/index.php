@@ -301,7 +301,7 @@ article{
    <td >
    <?php
        //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta12="imagen/aulavirtual.jpg";
+       $ruta12="imagen/aulavirtual.jpeg";
         ?>
         <img  style="width:1150px;height:250px;"  src="<?php echo $ruta12; ?>">
    </td>
