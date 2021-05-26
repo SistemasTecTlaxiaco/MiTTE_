@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'http://localhost/Proyecto-mytec/');
+define('URL', 'https://appmitte.herokuapp.com/');
 define('HOST', 'localhost');
 define('DB', 'mvc');
 define('USER', 'root');
