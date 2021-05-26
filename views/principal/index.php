@@ -232,12 +232,81 @@ article{
   
               proyectos educativos.</div>
 
-              <?php
+              <br>
+<center>
+<table  style="font-size:80%;">
+      <tr>
+           <td class="texto" > Archivos Recientes
+          </td>
+      </tr>
+      <tr>
+             <td class="cursos">
+             <?php
        //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta4="imagen/cursos.jpeg";
+       $ruta10="imagen/10.jpeg";
         ?>
+        <img  style="width:380px;height:250px;"  src="<?php echo $ruta10; ?>">
+             </td>
+             <td class="cursos">
+             <?php
+       //aquí coges de donde sea la ruta que quieres mostrar
+       $ruta11="imagen/11.jpeg";
+        ?>
+        <img  style="width:380px;height:250px;"  src="<?php echo $ruta11; ?>">
+             </td>
+             <td class="cursos">
+             <?php
+       //aquí coges de donde sea la ruta que quieres mostrar
+       $ruta11="imagen/12.jpeg";
+        ?>
+        <img  style="width:380px;height:250px;"  src="<?php echo $ruta11; ?>">
+             </td>
+      </tr>
 
-        <img  style="width:1000px;height:450px;"  src="<?php echo $ruta4; ?>">
+      <tr>
+          <td class="cursos"> 
+          <a class="texto"  style="font-size:80%;" > Java Script.pdf </a>
+          <br>
+          <a class="texto"  style="font-size:70%;">Subido por: Jaciel Santiago Garcia</a>
+          </td>
+
+          <td class="cursos"> 
+          <a class="texto"  style="font-size:80%;">Investigacion de Frac..</a>
+          <br>
+          <a class="texto"  style="font-size:70%;">Subido por: David Juan Feria Ortiz</a>
+          </td>
+
+          <td class="cursos">
+          <a class="texto"  style="font-size:80%;">Uso de cajas css.pdf</a>
+          <br>
+          <a class="texto"  style="font-size:70%;">Subido por: Antonio Cruz Chavez</a>
+          </td>
+
+      </tr>
+
+</table>
+</center>
+<br>
+<center>
+<table>
+<tr>
+   <td >
+   <?php
+       //aquí coges de donde sea la ruta que quieres mostrar
+       $ruta12="imagen/aulavirtual.jpg";
+        ?>
+        <img  style="width:1150px;height:250px;"  src="<?php echo $ruta12; ?>">
+   </td>
+</tr>
+<tr>
+   <td class="cursos">
+   <center>
+   <a class="texto" style="font-size:80%;">Visita el aula virtual</a>
+   </center>
+   </td>
+</tr>
+</table>
+</center>
 
          </section>
 
