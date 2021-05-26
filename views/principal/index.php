@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <style type="text/css">
-  *{
+*{
     margin: 0;
-    padding: 0; /*espacio que hay entre un objeto y el texto*/
+    padding: 0; /espacio que hay entre un objeto y el texto/
 }
 /* 16=12pt=100%=1em*/
 body{
@@ -16,7 +16,7 @@ h1{
     color: #f60;
     margin: 0.25em auto;
     text-align: center;
-    /*sombre*/
+    /sombre/
     text-shadow: 5px 5px 10px rgba(255,255,255,0.9);
 }
 header{
@@ -44,7 +44,7 @@ footer#principal{
 }
 
 section#contenedor{
-    /*backgronund: #FFF;*/
+    /backgronund: #FFF;/
     max-width: 1600px;
     min-height: 100px;
     padding: 0;
@@ -65,7 +65,7 @@ aside{
     background: #3C4D5F;
     display: inline-block;
     max-width: 760px;
-    min-height: 800px;
+    min-height: 1008px;
     padding: 0.25em;
     text-align: center;
     vertical-align: top;
@@ -94,6 +94,14 @@ article{
     text-align: left;
     
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.cursos{
+  border: 2px solid #cdcdcd;
+  
+}
+.texto{
+  color: #828282;
 }
 
   }
