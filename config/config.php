@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'https://appmitte.herokuapp.com/');
+define('URL','https://sistemamitte.herokuapp.com/');
 define('HOST', 'localhost');
 define('DB', 'mvc');
 define('USER', 'root');
