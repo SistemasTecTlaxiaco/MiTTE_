@@ -10,9 +10,6 @@ require_once 'libs/view.php';
 require_once 'libs/app.php';
 include_once 'includes/user_session.php';
 require_once 'config/config.php';
-require 'PHPMailer/Exception.php';
-require 'PHPMailer/PHPMailer.php';
-require 'PHPMailer/SMTP.php';
 $app = new App();
 
 $nemail = new PHPMailer(true);
