@@ -66,10 +66,10 @@
       <div class="modal-body">
        <p> Para recuperar tu contraseña ingresa tu correo electronico, te enviaremos un codigo de verificación el cual ingresaras en la siguiente ventana </p>
        
-        <form action="<?php echo constant('URL'); ?>/cuenta/upload/" enctype="multipart/form-data" method="POST">
+        <form action="" enctype="multipart/form-data" method="POST">
       <div class="col-sm-12">        
-          <label for="email" class="form-label">Ingresa tu contraseña:</label>
-          <input type="email" name="email" class="form-control" id="email" placeholder="Ingresa tu correo electronico" require><br/>
+          <label for="email2" class="form-label">Ingresa tu contraseña:</label>
+          <input type="email" name="email2" class="form-control" id="email2" placeholder="Ingresa tu correo electronico" require><br/>
        </div>         
       </form>
       </div>
@@ -89,12 +89,12 @@
       </div>
       <div class="modal-body">
         <p>Rellena los campos correspondientes </p>
-        <form action="<?php echo constant('URL'); ?>login" enctype="multipart/form-data" method="POST">
+        <form action="" enctype="multipart/form-data" method="POST">
       <div class="col-sm-12">        
-          <label for="password" class="form-label">Nueva contraseña:</label>
-          <input type="password" name="email" class="form-control" id="password" placeholder="Ingresa tu nueva contraseña" require><br/>
-          <label for="password" class="form-label">Codigo de verificación:</label>
-          <input type="password" name="password" class="form-control" id="password" placeholder="Ingresa tu codigo de verificación" require><br/>
+          <label for="password2" class="form-label">Nueva contraseña:</label>
+          <input type="password" name="password2" class="form-control" id="password2" placeholder="Ingresa tu nueva contraseña" require><br/>
+          <label for="verificacion" class="form-label">Codigo de verificación:</label>
+          <input type="password" name="verificacion" class="form-control" id="verificacion" placeholder="Ingresa tu codigo de verificación" require><br/>
        </div>         
       </form>
       </div>
