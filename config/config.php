@@ -1,6 +1,6 @@
 <?php
 
-define('URL', 'http://localhost/MiTTE_/');
+define('URL', 'https://sistemamitte.herokuapp.com/');
 define('HOST', 'localhost');
 define('DB', 'mytte');
 define('USER', 'root');
