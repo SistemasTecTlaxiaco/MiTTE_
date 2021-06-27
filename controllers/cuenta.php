@@ -32,7 +32,7 @@ class Cuenta extends Controller{
     $name=$_SESSION['user'];
     $itemDatos=$this->model->getByEmail($name);
     $this->view->datos=$itemDatos;    
-    $this->view->render('cuenta/actualizacion'); 
+    $this->view->render('Cuenta/actualizacion'); 
 }
 function upload(){ 
     $nomUser=$_SESSION['user']; 
@@ -59,7 +59,7 @@ function upload(){
       $actividad="Actualizo su imagen de perfil: ".$nombre;
             $this->model->activity(['actividad'=>$actividad, 'user'=>$nomUser]);     
       if($this->model->setImagen($foto,$id->id)){    
-        header('Location:'.constant('URL').'cuenta'); 
+        header('Location:'.constant('URL').'Cuenta'); 
         die();   
       }
     } else{
@@ -96,7 +96,7 @@ function update(){
         if($this->model->insert(['nombre'=>$nombre, 'apellido'=>$apellido, 'email'=> $email,'fecha'=>$fecha,'tel'=>$tel,'estado'=>$est])){
             $actividad="Actualizo sus datos de perfil";
             $this->model->activity(['actividad'=>$actividad, 'user'=>$email]);
-            header('Location:'.constant('URL').'cuenta');   
+            header('Location:'.constant('URL').'Cuenta');   
         }else{
         $alert='<div class="alert alert-danger alert-dismissible align-items-center d-flex fade show" role="alert">  
         <div>
@@ -141,7 +141,7 @@ function updatePassword(){
            La contraseña se actualizo correctamente &nbsp</div><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>        
               </div>';       
             $this->view->alerta2=$alert;     
-            header('Location:'.constant('URL').'cuenta');   
+            header('Location:'.constant('URL').'Cuenta');   
         }else{
         $alert='  <div class="alert alert-danger alert-dismissible align-items-center d-flex fade show" role="alert">  
         <div>
