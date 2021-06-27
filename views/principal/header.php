@@ -57,7 +57,7 @@
       <li class="">&nbsp Bienvenido <a class="fw-bold text-dark "><?php echo $this->nomUser;?><a></li>
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="<?php echo constant('URL');?>cuenta">Perfil</a></li>
-        <li><a class="dropdown-item" href="<?php echo constant('URL');?>MisArchivos">Mis archivos</a></li>
+        <li><a class="dropdown-item" href="<?php echo constant('URL');?>misArchivos">Mis archivos</a></li>
         <li><a class="dropdown-item" href="#">Configuracion</a></li>
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="<?php echo constant('URL');?>/principal/closeSession">Cerrar sesión</a></li>

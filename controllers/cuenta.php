@@ -23,7 +23,7 @@ class Cuenta extends Controller{
         $this->view->nomUser=$nom; 
         $actividades=$this->model->getDatosActividad($name);
         $this->view->activity=$actividades; 
-        $this->view->render('cuenta/index');
+        $this->view->render('Cuenta/index');
     }else{
         header('Location:'.constant('URL').'errores/ErrorAcceso');       
     }
