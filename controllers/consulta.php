@@ -14,10 +14,8 @@ class Consulta extends Controller{
     }
 
     function verAlumno($param =null){
-      
         $idAlumno =$param[0];
         $alumno =$this->model->getById($idAlumno);
-
         session_start();
         $_SESSION['id_verAlumno'] = $alumno->matricula;
         $this->view->alumno = $alumno;

@@ -23,7 +23,6 @@ class App{
 
         if(file_exists($archivoController)){
             require_once $archivoController;
-
             //inicializa el controlador
             $controller = new $url[0];
             $controller->loadModel($url[0]);
@@ -44,6 +43,7 @@ class App{
             }
         }else{
             $controller = new Errores();
+            $controller->render();
         }
     }
 }

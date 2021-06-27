@@ -22,6 +22,14 @@
                     <input type="text" name="nombre" value="<?php echo $this->alumno->nombre; ?>" required>
             </p>
             <p>
+                <lavel form="nombre">Contraseña</lavel><br>
+                 <input type="password" name="Contraseña" value="<?php echo $this->alumno->pass; ?>" required>
+            </p> 
+            <p>
+                <lavel form="email">Email</lavel><br>
+                <input type="email" name="email" value="<?php echo $this->alumno->email; ?>" required/>
+            </p>           
+            <p>
                 <lavel form="apellido">A_paterno</lavel><br>
                     <input type="text" name="apellido" value="<?php echo $this->alumno->apellido; ?>" required>
             </p>
@@ -52,11 +60,7 @@
             <p>
                 <lavel form="codigo">Codigo Postal</lavel><br>
                     <input type="text" name="codigo" value="<?php echo $this->alumno->codigo; ?>" required/>
-            </p>
-            <p>
-                <lavel form="email">Email</lavel><br>
-                <input type="email" name="email" value="<?php echo $this->alumno->email; ?>" required/>
-            </p>
+            </p>           
             <p>
                <lavel form="archivo">Fotografia</lavel><br>
                 <input type="file" name="archivo" value="<?php echo $this->alumno->archivo; ?>"  required/> 

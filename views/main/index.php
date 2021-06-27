@@ -1,107 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<style type="text/css">
-  .btn{
-  
-    width: 300px;
-    height:20px;
-    background-color: #BC4040;
-    color: #ffffff;
-    border-radius: 6px;
-
-  }
-  .tabla{
-    position:center;
-    top:8em;
-  }
-  #sec{
-  background: #4BA2EF;
-    
-  width: 300px;
-  height:20px;
-  background-color: #205da1;
-  color: #ffffff;
-  border-radius: 6px;
-  font-size:90%;
-  text-align: center;
-}
-.panel{
-  color: black;
-
-}
-</style>
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-    <link rel="stylesheet" href="public/css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="16x16" type="image/png">
+  <link rel="stylesheet" href="<?php echo constant('URL');?>bootstrapd/css/bootstrap.min.css" crossorigin="anonymous">    
+  <script src="<?php echo constant('URL');?>bootstrapd/js/bootstrap.min.js"></script>  
+  <style>
+    .bg{
+      background-image: url(<?php echo constant('URL');?>Fondo.jpeg);
+      background-position: center center;
+    }
+  </style>
 </head>
-<body >
-<a class="panel" href="<?php echo constant('URL'); ?>principal"  type="submit" id="submit" value="Registrar Usuario"> <p >Ir a Panel</p> </a>
-  <!-- <?php
-   $ruta="imagen/1.jpeg";
-   ?>
-   <img style="windth:1565px;height: 400px;"; src="<?php echo $ruta; ?>"> -->
-    
-    <?php require 'views/header.php'; ?>
-  
-    <div id="nav">
-    <center>
-    <table class="tabla" style="text-align:center;">
-        <tr>
-   
-        <th>
-        <div id="aside">
-  
 
-<form action="<?php echo constant('URL'); ?>main/login"  method="POST">
-<br>
-<label form="matricula"></label>
-<input type="text" name="matricula" id="" placeholder="Correo Electronico"  required ></p>
-<br>
-<label form="nombre"></label>
-<input type="password" name="nombre" placeholder="Contraseña" id=""  required></p>
-<br>
-<p style="font-size:85%;"> ¿Olvidaste la contraseña?
-<br>  
-
-</br>
-<button class="btn"> 
-    <a href="<?php echo constant('URL'); ?>principal"  type="submit" id="submit" value="Registrar Usuario"> <p >Iniciar Sesion</p> </a>
-    </button>
-    <center> 
- <br>
-    <section id=sec>  
-            <a  href="<?php echo constant('URL'); ?>nuevo"> <b >Registrate</b> </a> 
-            </section>
-            </center>
- </div>
-</th>
-<th>
-       <div text-aling="center" style="color:white">Bienvenido </div>
-       <div id="section">
-        <div id="text" style="font-size:80%;" > Ingresa y comparte tus proyectos e investigaciones, encuentra 
-       informaciòn relevada para realizar tus actividades, toma los 
-       pequeños cursos para retroalimentar tus conocimiento,
-       Visualiza los archivos alojados en el sistema</div>
-     </div>
-        </th>
+<body> 
+  <?php require 'views/header.php';?>
+  <br>
+  <div class="container w-75 bg-secondary mt-5 rounded shadow">
+    <div class="row">
+    <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
+      <div class="col bg-white p-5 rounded-end">      
+      <form action="<?php echo constant('URL'); ?>/login/authenticate" enctype="multipart/form-data" method="POST">
+        <div class="mb-4">
+          <label for="email" class="form-label" required>Correo Electronico</label>
+          <input type="email" class="form-control" value="jaci" name="email">
         </div>
-</tr>
-</table>
- </center>
-   <br>
-.
-</br>
-<br>
-.
-</br>
-<br>
-.
-</br>
-
-    <?php require 'views/footer.php'; ?>
+        <div class="mb-4">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" name="password">
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-danger">Iniciar Sesion</button>
+        </div>
+        <div class="my-3">
+        <span>No tienes cuenta? <a href="#">Registrate</a></span><br>
+        <span><a href="#">Recuperar contraseña</a></span><br>
+        </div>
+      </form>
+      </div>
+      </div>
+      </div>
+      <script src="<?php echo constant('URL'); ?>bootstrapd/js/popper.min.js"></script>
+      <br>      
+      <?php require 'views/footer.php'; ?>   
 </body>
 </html>

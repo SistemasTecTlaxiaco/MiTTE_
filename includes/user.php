@@ -1,14 +1,13 @@
 <?php
-include 'libs/database.php';
-
-class User extends DB{
+include_once 'models/alumno.php';
+class User extends Database{
     private $nombre;
-    private $email;
+    private $correo;
     
-    public function userExists($user, $pass){
-        $md5pass = md5($pass);
-        $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE email = :user AND password  = :pass');
-        $query->execute(['user' => $user, 'pass' => $md5pass]);
+    public function userExists($user, $contraseña){
+        $md5pass = md5($contraseña);
+        $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE email = :user AND password = :email');
+        $query->execute(['user' => $user, 'contraseña' => $md5pass]);
 
         if($query->rowCount()){
             return true;
@@ -19,16 +18,24 @@ class User extends DB{
 
     public function setUser($user){
         $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE email = :user');
-        $query->execute(['user' => $user]);
-        
+        $query->execute(['user' => $user]);        
         foreach ($query as $currentUser) {
-            $this->nombre = $currentUser['nombre'];
-            $this->email = $currentUser['email'];
+            $this->correo  = $currentUser['email'];
+            $this->nombre =  $currentUser['nombre'];
         }
     }
 
     public function getNombre(){
         return $this->nombre;
+    }
+    public function getPhoto($user){
+        $item= new Alumno();
+        $query = $this->connect()->prepare('SELECT * FROM usuarios WHERE email = :user');
+        $query->execute(['user' => $user]);        
+         while ($row = $query->fetch()) {
+        $item->foto = $row ['imagen'];            
+        }
+        return$item;
     }
 }
 

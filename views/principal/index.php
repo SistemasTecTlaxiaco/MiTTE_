@@ -1,369 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<style type="text/css">
-*{
-    margin: 0;
-    padding: 0; /espacio que hay entre un objeto y el texto/
-}
-/* 16=12pt=100%=1em*/
-body{
-    background: #FFFFFF ;
-    color: #000000;
-    font-family: "Soberana", "Arial";
-    font-size: 2em;
-}
-h1{
-    color: #f60;
-    margin: 0.25em auto;
-    text-align: center;
-    /sombre/
-    text-shadow: 5px 5px 10px rgba(255,255,255,0.9);
-}
-header{
-  background: #3C4D5F;
-    max-width: 1385px;
-    min-height: 75px;
-    padding: 0.25em;
-    text-align: right;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">   
+    <title>Pagina principal MiTTE</title>
+    <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="16x16" type="image/png">
+<link rel="stylesheet" href="<?php echo constant('URL');?>bootstrapd/css/bootstrap.min.css" crossorigin="anonymous"> 
+<link rel="stylesheet" href="<?php echo constant('URL');?>bootstrapd/css/bootstrap.css" crossorigin="anonymous"> 
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .bg{
+      background-image: url(<?php echo constant('URL');?>/img/dormir.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;   
+      background-position: center center;         
+    }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-footer#contenedor{
-  background: #7B7B7B;
-  max-width: 1385px;
-    min-height: 100px;
-    padding: 0.25em;
-    text-align: center;
-}
-
-footer#principal{
-  background: #9E9E9E;
-  max-width: 1285px;
-    min-height: 95px;
-    padding: 0.5em;
-    text-align: center;
-}
-
-section#contenedor{
-    /backgronund: #FFF;/
-    max-width: 1600px;
-    min-height: 100px;
-    padding: 0;
-    text-align: left;
-}
-section#principal{
-    background: #FFFFFFFF;
-    display: inline-block;
-    color: 00000;
-    max-width: 1400px;
-    min-height: 800px;
-    padding: 0.25em;
-    text-align: center;
-    vertical-align: top;
-    width: 87%;
-}
-aside{
-    background: #3C4D5F;
-    display: inline-block;
-    max-width: 760px;
-    min-height: 1008px;
-    padding: 0.25em;
-    text-align: center;
-    vertical-align: top;
     
-}
-article{
-    background: #011e30;
-    border-radius: 0.5em;
-    min-height: 140px;
-    padding: 0.25em;
-}
+  </head>
+  <body>   
+  <?php require 'views/principal/header.php';?>
+  <main>
+  <section class="py-3 text-center container">
+    <div class="row py-lg-5 bg-danger">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-white text-light">Introduccion</h1>
+        <p class="lead text-light">MiTTE es un espacio de integración de elementos y escenarios académicos fuera del aula virtual en el cual podrás encontrar contenido de apoyo docente y estudiantil como tutoriales y cursos que permitirán fortalecer tus conocimentos y ademàs te servirán de ayuda en la realización de trabajos o 
+proyectos educativos..</p>        
+      </div>
+    </div>
+  </section>
 
-.boton{
-   width: 150px;
-    height:30px;
-    background-color: #1BD1B1;
-    color: #000000;
-    border-radius: 6px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.boton2{
-   width: 128px;
-    height:30px;
-    background-color: #9E9E9E;
-    color: #FFFFFFFF;
-    text-align: left;
-    
-    font-family: Arial, Helvetica, sans-serif;
-}
+  <div class="album py-5">
+    <div class="container">
 
-.cursos{
-  border: 2px solid #cdcdcd;
-  
-}
-.texto{
-  color: #828282;
-}
-
-  }
- 
-</style>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Panel</title>
-    
-</head>
-<body>
-    <header id=imagen>
-     
-        <?php
-       //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta3="imagen/insertar.jpeg";
-        ?>
-        <img  style="width:700px;height:65px;"  src="<?php echo $ruta3; ?>">
-       
-    </header>
-
-    <section id="contenedor">
-
-         <aside>
-<ul>
- <li>
-         <?php
-       //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta2="imagen/usuario.png";
-        ?>
-
-        <img  style="width:120px;height:120px;"  src="<?php echo $ruta2; ?>">
-</li>
-<br>
-</br>
-<li>
-  <Table style="font-size:20%;">
-  <tr>
-        <th>
-     
-      
-
-          <button 
-           class="boton2"  style="background-color: #9E9E9E"  >  <?php
-        $ruta7="imagen/inicio.png";
-        ?>
-        <img style="width:20px;height:20px;" src="<?php echo $ruta7;?>">Pagina Principal
-          </button>
-         </th>       
-  </tr>
-  <tr>
-         <th>
-         <button class="boton2" style="background-color: #9E9E9E"  >
-         <?php
-        $ruta8="imagen/carpeta.png";
-        ?>
-        <img style="width:20px;height:20px;" src="<?php echo $ruta8;?>">
-         Archivos
-          </button>
-            
-         </th>
-</tr>
-<tr>
-         <th>
-         <button class="boton2" style="background-color: #9E9E9E"  >
-         <?php
-        $ruta9="imagen/gorra.png";
-        ?>
-        <img style="width:20px;height:20px;" src="<?php echo $ruta9;?>">Posgrados
-          </button>   
-        </th>
-</tr>
- <tr>
-        <th>
-         <button class="boton2" style="background-color: #9E9E9E"  >
-         <?php
-        $ruta10="imagen/biblioteca.png";
-        ?>
-        <img style="width:20px;height:20px;" src="<?php echo $ruta10;?>">Cursos
-          </button>
-            
-        </th>
-  </tr>
-  <tr>
-       <th>
-         <button class="boton2" style="background-color: #9E9E9E"  >
-         <?php
-        $ruta11="imagen/historial.png";
-        ?>
-        <img style="width:20px;height:20px;" src="<?php echo $ruta11;?>">Historial
-          </button>
-            
-        </th>
-  </tr>
-  <tr>
-       <th>
-         <button class="boton2" style="background-color: #9E9E9E"  >
-         <?php
-        $ruta12="imagen/configuraciones.png";
-        ?>
-        <img style="width:20px;height:20px;" src="<?php echo $ruta12;?>">Configuraciòn 
-          </button>
-        </th>
-  </tr>
-</Table>
-      
-</li>
-</ul>    
-          </aside>
-
-          <section id="principal" >
-          <br>
-</br>
-          <div id="text" style="font-size:80%;" >Introducciòn 
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">  
+             <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479.44 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>JavaScript.pdf</title><image width="1000" height="420" transform="scale(0.48 0.61)" xlink:href="<?php echo constant('URL'); ?>img/10.jpeg"/></a></svg>
+             <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">JavaScript.pdf</h5>
+              <p class="card-text">JavaScript es uno de los lenguajes mas utilizados hoy en dia para la programacion de eventos y funciones.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                <small class="text-muted"> Subido por: Jaciel Garcia Santiago</small>
+                </div>
+                <small class="text-muted"> 5hr</small>
               </div>
-        <br>
-</br>
-<div id="text" style="font-size:70%;" > MiTTE es un espacio de integraciòn de elementos y escenarios acadèicos 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 253" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Investigacion de fractales.pdf</title><image width="1280" height="960" transform="scale(0.37 0.27)" xlink:href="<?php echo constant('URL'); ?>img/11.jpeg"/></a></svg>          
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Investigacion de fractales.pdf</h5>
+              <p class="card-text">Un fractal es un objeto geométrico cuya estructura básica, fragmentada o aparentemente irregular, se repite a diferentes escalas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                <small class="text-muted"> Subido por: David Juan Feria Ortiz</small>
+                </div>
+                <small class="text-muted">15 dias</small>
               </div>
-       
-         <div id="text" style="font-size:70%;" >
-              fuera del aula virtual en el cual podràs encontrar contenido de apoyo docente
-             </div>
-       
-         <div id="text" style="font-size:70%;" >
-              y estudiantil como tutoriales y cursos que permitiràn fortalecer tus 
-             </div>
-      
-         <div id="text" style="font-size:70%;" > 
-              conocimentos y ademàs te serviràn de ayuda en la realizaciòn de trabajos o
-              proyectos educativos.</div>
-      
-         <div id="text" style="font-size:70%;" > 
-  
-              proyectos educativos.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" href= "<?php echo constant('URL'); ?>img/c.svg"></img>
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Usos de cajas.pdf</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/t2.jpg"/></a></svg> 
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Usos de cajas.pdf</h5>
+              <p class="card-text">CSS es un lenguaje que define la apariencia de un documento escrito en un lenguaje de Hipertextos incluyendo varios languages basados en XML.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                <small class="text-muted"> Subido por: Antonio Cruz Chavez</small>
+                </div>
+                <small class="text-muted">20 dias</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <br>
-<center>
-<table  style="font-size:80%;">
-      <tr>
-           <td class="texto" > Archivos Recientes
-          </td>
-      </tr>
-      <tr>
-             <td class="cursos">
-             <?php
-       //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta10="imagen/10.jpeg";
-        ?>
-        <img  style="width:380px;height:250px;"  src="<?php echo $ruta10; ?>">
-             </td>
-             <td class="cursos">
-             <?php
-       //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta11="imagen/11.jpeg";
-        ?>
-        <img  style="width:380px;height:250px;"  src="<?php echo $ruta11; ?>">
-             </td>
-             <td class="cursos">
-             <?php
-       //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta11="imagen/12.jpeg";
-        ?>
-        <img  style="width:380px;height:250px;"  src="<?php echo $ruta11; ?>">
-             </td>
-      </tr>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Usos de cajas.pdf</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/t1.png"/></a></svg>
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Importacia y uso de HTML5.pdf</h5>
+              <p class="card-text">Es un lenguaje con elementos que dan estructura a una página web y mejora la organización del contenido (en su mas reciente version).</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                <small class="text-muted"> Subido por: Marcos Jonathan</small>
+                </div>
+                <small class="text-muted">30 dias</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Manual de Laravel.pdf</title><image width="1280" height="720" transform="scale(0.37 0.35)" xlink:href="<?php echo constant('URL'); ?>img/t3.jpg"/></a></svg>
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Manual de Laravel.pdf</h5>
+              <p class="card-text">Laravel es un framework de código abierto para desarrollar aplicaciones y servicios web con PHP 5, PHP 7 y PHP 8.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                <small class="text-muted"> Subido por: Maria Hernandez Zabedra</small>
+                </div>
+                <small class="text-muted">30 dias</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Usos de cajas.pdf</title><image width="700" height="368" transform="scale(0.68 0.69)" xlink:href="<?php echo constant('URL'); ?>img/t4.jpg"/></a></svg>
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">PHP para principiantes.pdf</h5>
+              <p class="card-text">PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                <small class="text-muted"> Subido por: Francisco Mejia Jose</small>
+                </div>
+                <small class="text-muted">40 dias</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <tr>
-          <td class="cursos"> 
-          <a class="texto"  style="font-size:80%;" > Java Script.pdf </a>
-          <br>
-          <a class="texto"  style="font-size:70%;">Subido por: Jaciel Santiago Garcia</a>
-          </td>
-
-          <td class="cursos"> 
-          <a class="texto"  style="font-size:80%;">Investigacion de Frac..</a>
-          <br>
-          <a class="texto"  style="font-size:70%;">Subido por: David Juan Feria Ortiz</a>
-          </td>
-
-          <td class="cursos">
-          <a class="texto"  style="font-size:80%;">Uso de cajas css.pdf</a>
-          <br>
-          <a class="texto"  style="font-size:70%;">Subido por: Antonio Cruz Chavez</a>
-          </td>
-
-      </tr>
-
-</table>
-</center>
-<br>
-<center>
-<table>
-<tr>
-   <td >
-   <?php
-       //aquí coges de donde sea la ruta que quieres mostrar
-       $ruta12="imagen/aulavirtual.jpeg";
-        ?>
-        <img  style="width:1150px;height:250px;"  src="<?php echo $ruta12; ?>">
-   </td>
-</tr>
-<tr>
-   <td class="cursos">
-   <center>
-   <a class="texto" style="font-size:80%;">Visita el aula virtual</a>
-   </center>
-   </td>
-</tr>
-</table>
-</center>
-
-         </section>
-
- 
-   <footer id="contenedor">
-      
-        <footer id="principal">
-      <center>
-<table  style="font-size:50%;" >
-  <tr>
-        <th>
-          <button class="boton"  style="background-color: #1BD1B1"  > Contacto
-          </button>
-         </th>
-         <th>
-         <button class="boton" style="background-color: #1BD1B1"  >About
-          </button>
-            
-         </th>
-         <th>
-         <button class="boton" style="background-color: #1BD1B1"  >Buzòn de trabajo
-          </button>
-            
-        </th>
-      
-  </tr>
-
-        <tr>
-      
-            <td> https://tlaxiaco.tecnm.mx </td>
-             <td>Sobre nosotros </td>
-            <td>Buzòn_tt@tlaxiaco.tecnm.mx</td>
-         <tr>
-             <td>Telèfono: 000 000 0000 </td>
-            
-         </tr>
-         <tr>
-             <td>Buzòn_tt@tlaxiaco.tecnm.mx</td>
-            
-        </tr>
-
-</table>
-</center>
-        </footer>
-    </footer>
-
-    </section>
-
-   
-
-</body>
+      </div>
+    </div>
+  </div>
+</main>
+    <script src="<?php echo constant('URL'); ?>bootstrapd/js/bootstrap.bundle.min.js"></script> 
+    <br>
+    <?php require 'views/footer.php'; ?>   
+  </body>
 </html>

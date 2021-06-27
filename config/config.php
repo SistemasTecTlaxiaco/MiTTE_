@@ -1,10 +1,10 @@
 <?php
 
-define('URL','https://sistemamitte.herokuapp.com/');
+define('URL', 'http://localhost/MiTTE_/');
 define('HOST', 'localhost');
-define('DB', 'mvc');
+define('DB', 'mytte');
 define('USER', 'root');
-define('PASSWORD', "hola");
+define('PASSWORD', "JgSyLaP97");
 define('CHARSET', 'utf8mb4');
 
 ?>
