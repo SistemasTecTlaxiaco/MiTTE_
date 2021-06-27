@@ -34,7 +34,7 @@
   </head>
   <body>   
   <?php require 'views/principal/header.php';?>
-  <main>
+  <div>
   <section class="py-3 text-center container">
     <div class="row py-lg-5 bg-danger">
       <div class="col-lg-6 col-md-8 mx-auto">
@@ -169,7 +169,7 @@
       </div>
     </div>
   </div>
-</main>
+</div>
     <script src="<?php echo constant('URL'); ?>bootstrapd/js/bootstrap.bundle.min.js"></script> 
     <br>
     <?php require 'views/footer.php'; ?>   
