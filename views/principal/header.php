@@ -65,6 +65,8 @@
     </div>  
         </div>
     </nav>
+    <script src="<?php echo constant('URL'); ?>js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo constant('URL'); ?>js/bootstrap.min.js" crossorigin="anonymous"></script> 
     <script src="<?php echo constant('URL'); ?>bootstrapd/js/bootstrap.bundle.min.js"></script> 
     <script src="<?php echo constant('URL');?>/public/js/sidebars.js"></script>
 </body>

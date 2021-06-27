@@ -54,7 +54,56 @@
         </div>
         <div class="my-3">
         <span>No tienes cuenta? <a href="<?php echo constant('URL');?>signup">Registrate</a></span><br>
-        <span><a href="#">Recuperar contraseña</a></span><br>
+        <span><a data-bs-toggle="modal" href="#modalrecuperacion" role="button">Recuperar contraseña</a></span><br>
+
+        <div class="modal fade" id="modalrecuperacion" aria-hidden="true" aria-labelledby="modalrecuperacionLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalrecuperacionLabel">¿Olvidaste tu contraseña?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p> Para recuperar tu contraseña ingresa tu correo electronico, te enviaremos un codigo de verificación el cual ingresaras en la siguiente ventana </p>
+       
+        <form action="<?php echo constant('URL'); ?>/cuenta/upload/" enctype="multipart/form-data" method="POST">
+      <div class="col-sm-12">        
+          <label for="email" class="form-label">Ingresa tu contraseña:</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Ingresa tu correo electronico" require><br/>
+       </div>         
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#modalnuevacontraseña" data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalnuevacontraseña" aria-hidden="true" aria-labelledby="modalnuevacontraseñaLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalnuevacontraseñaLabel2">Ingresa tu contraseña y codigo de verificación</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Rellena los campos correspondientes </p>
+        <form action="<?php echo constant('URL'); ?>login" enctype="multipart/form-data" method="POST">
+      <div class="col-sm-12">        
+          <label for="password" class="form-label">Nueva contraseña:</label>
+          <input type="password" name="email" class="form-control" id="password" placeholder="Ingresa tu nueva contraseña" require><br/>
+          <label for="password" class="form-label">Codigo de verificación:</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Ingresa tu codigo de verificación" require><br/>
+       </div>         
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </form>
       </div>

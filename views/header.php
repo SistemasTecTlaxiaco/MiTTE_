@@ -28,5 +28,7 @@
             </div>
         </div>
     </nav>
+    <script src="<?php echo constant('URL'); ?>js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="<?php echo constant('URL'); ?>js/bootstrap.min.js" crossorigin="anonymous"></script>  
 </body>
 </html>

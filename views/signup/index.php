@@ -83,7 +83,7 @@
           <button onclick=" if(valida()==true){return true;}else{return false;}" onsubmit="return false"  class="btn btn-danger" type="submit">Registrate</button>
         </div>
         <div class="my-3">
-        <span>Ya tienes cuenta? <a href="<?php echo constant('URL');?>main">Inicia sesión</a></span><br>        
+        <span>Ya tienes cuenta? <a href="<?php echo constant('URL');?>login">Inicia sesión</a></span><br>        
         </div>
       </form>
       </div>
