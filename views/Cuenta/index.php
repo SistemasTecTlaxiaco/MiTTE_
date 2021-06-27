@@ -110,7 +110,7 @@
         <?php echo $this->alerta2;?>  
           <dl style="display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;">
            <dt class="fs-5">Nombre completo:</dt>
-          <p class="card-text mb-auto"><?php echo $this->datos->nombre;?>&nbsp<?php echo $this->datos->apellido;?></p><?php?>
+          <p class="card-text mb-auto"><?php echo $this->datos->nombre;?>&nbsp<?php echo $this->datos->apellido;?></p>
           </dl> 
           <dl>
            <dt class="fs-5">Correo Electronico:</dt>
