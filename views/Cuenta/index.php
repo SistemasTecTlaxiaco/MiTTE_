@@ -58,7 +58,7 @@
        </div>       
         <div class="col-6  col-ms-1 col-md-3 mx-auto align-items-center">
       <a href="#" class="bd-placeholder-img" data-bs-toggle="modal" data-bs-target="#ModalImagen">
-        <img src="<?php echo constant('URL').$this->datos->foto?>" alt="" width="100%" height="300" class="rounded-circle img-lg"></a>
+        <img src="<?php echo $this->datos->foto?>" alt="" width="100%" height="300" class="rounded-circle img-lg"></a>
             
         <div>
         <br>
@@ -80,7 +80,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <img src="<?php echo constant('URL').$this->datos->foto?>" alt="" width="100%" height="320" class="rounded-circle img-g"></a> 
+      <img src="<?php echo $this->datos->foto?>" alt="" width="100%" height="320" class="rounded-circle img-g"></a> 
       <br>
       <form action="<?php echo constant('URL'); ?>/cuenta/upload/" enctype="multipart/form-data" method="POST">
       <div class="col-sm-12">        

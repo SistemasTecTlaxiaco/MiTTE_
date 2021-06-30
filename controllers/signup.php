@@ -18,7 +18,7 @@ class Signup extends Controller{
         $fecha= $_POST['fecha'];
         $tel= $_POST['telefono'];   
         $est= $_POST['estado']; 
-        $photo= '/uploads/oso.png';      
+        $photo= 'https://mitte-img.s3.us-east-2.amazonaws.com/Oso.png';      
         $pass_encrypt=password_hash($pass,PASSWORD_DEFAULT,array("cost"=>10));
         $mensaje="";
         if($this->model->insert(['nombre'=>$nombre, 'apellido'=>$apellido, 'email'=> $email,'password' =>$pass_encrypt,
