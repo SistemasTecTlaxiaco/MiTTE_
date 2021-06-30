@@ -1,6 +1,7 @@
 <?php
 include_once 'models/alumno.php';
 include_once 'models/actividad.php';
+include_once 'models/sistema.php';
     class CuentaModel extends Model{
         public function __construct() {
             parent:: __construct();
@@ -144,6 +145,20 @@ include_once 'models/actividad.php';
                         array_push($acts,$act);
                     }
                     return $acts;
+                } catch (PDOException $e) {
+                    return [];
+                } 
+            }
+            public function secret($id){
+                $cli =new Sistema();
+                $query =$this->db->connect()->prepare("SELECT * FROM s3 WHERE id = :id");
+                try {  
+                        $query->execute(['id' => $id]);
+                        while ($row = $query->fetch()) {                        
+                        $cli->clave = $row ['clave'];                     
+                        $cli->secret= $row ['secret'];                       
+                    }
+                    return $cli;
                 } catch (PDOException $e) {
                     return [];
                 } 
