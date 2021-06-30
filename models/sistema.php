@@ -2,7 +2,6 @@
 class Sistema{
     public $id;  
     public $clave;  
-    public $secret;
-    
+    public $secret;    
 }
 ?>

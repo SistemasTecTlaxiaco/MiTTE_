@@ -163,8 +163,7 @@ include_once 'models/sistema.php';
                     return [];
                 } 
             }
-        
-            
+                    
     }
 
 ?>
