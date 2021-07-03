@@ -12,7 +12,7 @@ botones.forEach(boton=>{
         } 
      if(confirm){
        //solicitud AJAX
-       httpRequest("/MiTTE_/login/recupera/", function(){
+       httpRequest("https://sistemamitte.herokuapp.com/login/recupera/", function(){
            document.querySelector(".respuesta").innerHTML=this.responseText; 
            if(this.responseText=="Te acabamos de enviar el código de verificación a tu correo electrónico (esta tiene una vigencia de 48hr)" || this.responseText=="Te acabamos de enviar un nuevo código de verificación a tu correo electrónico, el anterior ya no será util (esta tiene una vigencia de 48hr)"){
            document.querySelector(".siguiente").removeAttribute("disabled");

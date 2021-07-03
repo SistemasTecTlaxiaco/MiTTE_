@@ -1,4 +1,5 @@
 <?php
+include_once 'models/sistema.php';
 class LoginModel extends Model{
 
     public function __construct(){
@@ -141,6 +142,19 @@ class LoginModel extends Model{
             return null;
         }  
         }
-}   
-
-?>
+        public function secret($id){
+            $cli =new Sistema();
+            $query =$this->db->connect()->prepare("SELECT * FROM s3 WHERE id = :id");
+            try {  
+                    $query->execute(['id' => $id]);
+                    while ($row = $query->fetch()) {                        
+                    $cli->clave = $row ['clave'];                     
+                    $cli->secret= $row ['secret'];                       
+                }
+                return $cli;
+            } catch (PDOException $e) {
+                return [];
+            } 
+        }
+    } 
+    ?>
