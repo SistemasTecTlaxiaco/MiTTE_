@@ -9,7 +9,7 @@ boton2.forEach(btn=>{
      }
      if(confirm){
        //solicitud AJAX
-       httpRequest("http://localhost/sistema2/MiTTE_/login/validacionToken/", function(){
+       httpRequest("https://sistemamitte.herokuapp.com/MiTTE_/login/validacionToken/", function(){
            document.querySelector(".respuesta2").innerHTML=this.responseText;            
            if(this.responseText=="Tu token es correcto, da clic en siguiente para proceder a cambiar tu contraseña"){
             document.querySelector(".siguiente2").removeAttribute("disabled");
