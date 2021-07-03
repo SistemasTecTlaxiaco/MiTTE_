@@ -31,11 +31,11 @@
     <div class="row g-3">
       <div class="col-sm-12">
           <label for="nombre" class="form-label">Seleciona tu archivo (max. 2mb)</label>
-          <input type="file" name="archivo" class="form-control" value="" id="archivo" placeholder="Selecciona tu archivo (maximo 2mb)"  accept="application/pdf, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/vnd.openxmlformats-officedocument.presentationml.presentation">
+          <input type="file" name="archivo" class="form-control" value="" id="archivo" placeholder="Selecciona tu archivo (maximo 2mb)"  accept="application/pdf, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/vnd.openxmlformats-officedocument.presentationml.presentation" required>
        </div>     
       <div class="col-sm-6">
           <label for="titulo" class="form-label">Titulo</label>
-          <input type="text" name="titulo" class="form-control" id="titulo" placeholder="Titulo con el que aparecera tu archivo">
+          <input type="text" name="titulo" class="form-control" id="titulo" placeholder="Titulo con el que aparecera tu archivo" required>
         </div> 
       <div class="col-sm-6">
           <label for="autor" class="form-label">Autor</label>
@@ -43,11 +43,11 @@
         </div>
         <div class="col-sm-6">
           <label for="passwo" class="form-label">Materia</label>
-          <input type="text" class="form-control" name="materia" id="materia" placeholder="Ingresa el nombre de la materia" >
+          <input type="text" class="form-control" name="materia" id="materia" placeholder="Ingresa el nombre de la materia" required>
         </div>        
         <div class="col-sm-6">
           <label for="Fecha" class="form-label">tipo de publicacion</label>
-          <input type="text" class="form-control" value="" name="tipo" id="tipo" name="event_datetime" id="form_datetime" placeholder="Ingresa el tipo de publicacion (investigacion, proyecto o posgrado)">
+          <input type="text" class="form-control" value="" name="tipo" id="tipo" name="event_datetime" id="form_datetime" placeholder="Ingresa el tipo de publicacion (investigacion, proyecto o posgrado)" required>
         </div> 
         </div>
         <div class="mb-4">
