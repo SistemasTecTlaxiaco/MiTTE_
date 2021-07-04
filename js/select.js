@@ -14,7 +14,10 @@ function validacion(){
         document.getElementById("respuesta3").innerHTML="Las contraseñas no coinciden, reviselas e ingreselas de nuevo por favor";                               
        document.getElementById("verificacion").style.backgroundColor='#FAE0E2';
        document.getElementById("verificacion").style.borderColor='#dc3545';
-       document.getElementById("verificacion").value="";                
+       document.getElementById("password2").style.backgroundColor='#FAE0E2';
+        document.getElementById("password2").style.borderColor='#dc3545';  
+       document.getElementById("verificacion").value="";  
+       document.getElementById("password2").value="";                
        $bandera2=false;    
      }else 
      if(document.getElementById("password2").value==document.getElementById("verificacion").value){  
