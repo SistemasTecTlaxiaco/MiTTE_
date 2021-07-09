@@ -38,7 +38,7 @@
   <section class="py-3 text-center container">
     <div class="row py-lg-5 bg-danger">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-white text-light">Bienvenido al apartado de posgrados</h1>
+        <h1 class="fw-white text-light">Bienvenido al apartado de Proyectos</h1>
         <p class="lead text-light">En este apartado encontraras una variedad de investigaciones y tesis hechas por estudiantes de posgrados universitarios (ingeniria y licenciatura)</p>        
       </div>
     </div>
