@@ -135,7 +135,7 @@ function obtenToken($longitud){
                     $mail->Port=587;
         
                     //recipients
-                    $mail->setFrom('EquipoTecTlax@hotmail.com','Equipo de cuentas MiTTE');
+                    $mail->setFrom($datos->clave,'Equipo de cuentas MiTTE');
                     $mail->addAddress($email,'Mailer');            
                     
                     //content            
