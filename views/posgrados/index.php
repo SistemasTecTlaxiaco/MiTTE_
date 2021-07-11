@@ -50,7 +50,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4  g-3">
       <div class="col">
           <div class="card shadow-sm">   
-             <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479.44 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Teoria de grafos</title><image width="1000" height="420" transform="scale(0.48 0.61)" xlink:href="<?php echo constant('URL'); ?>img/grafos.png"/></a></svg>
+             <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479.44 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Teoria de grafos\Teoria de grafos.pdf"><title>Teoria de grafos</title><image width="1000" height="420" transform="scale(0.48 0.61)" xlink:href="<?php echo constant('URL'); ?>img/grafos.png"/></a></svg>
              <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Teoria de grafos</h5>
               <p class="card-text">La teoría de grafos, también llamada teoría de gráficas, es una rama de las matemáticas y las ciencias de la computación que estudia las propiedades de los grafos.</p>
@@ -65,7 +65,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Creacion de una aplicacion movil para BMW</title><image width="1258" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/celulares.jpg"/></a></svg>          
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Creacion de una aplicacion movil para BMW\Creacion de una aplicacion movil para BMW.pdf"><title>Creacion de una aplicacion movil para BMW</title><image width="1258" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/celulares.jpg"/></a></svg>          
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Creacion de una aplicacion movil para BMW</h5>
               <p class="card-text">Las apps móviles se han posicionado como unas de las herramientas más eficaces para las empresas, especialmente en el campo del e-commerce.</p>
@@ -81,7 +81,7 @@
         <div class="col">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" href= "<?php echo constant('URL'); ?>img/c.svg"></img>
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Inteligencia artificial</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/robot.jpg"/></a></svg> 
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion de Inteligencia artificial\Inteligencia artificial.pdf"><title>Inteligencia artificial</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/robot.jpg"/></a></svg> 
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Inteligencia artificial</h5>
               <p class="card-text text-justify">IA se refiere a los sistemas o las máquinas que imitan la inteligencia humana para realizar tareas y que tienen la capacidad de mejorar iterativamente a partir de la información que recopilan.</p>
@@ -97,7 +97,7 @@
         <div class="col">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" href= "<?php echo constant('URL'); ?>img/c.svg"></img>
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Implementacion de un sistema para la automatizacion de procesos</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/financiera.jpg"/></a></svg> 
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Implementacion de un sistema para la automatizacion de procesos\Implementacion de un sistema para la automatizacion de procesos.pdf"><title>Implementacion de un sistema para la automatizacion de procesos</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/financiera.jpg"/></a></svg> 
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Implementacion de un sistema para la automatizacion de procesos</h5>
               <p class="card-text">Una metodología en ingeniería de software es un modo de llevar a cabo diferentes actividades en determinado orden y comprende las herramientas utilizadas.</p>
@@ -113,7 +113,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Analisis, diseño e implementacion de software sobre redes IP</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/ip.jpg"/></a></svg>
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\investigacion de Analisis, diseño e implementacion de software sobre redes IP\Analisis, diseño e implementacion de software sobre redes IP.pdf"><title>Analisis, diseño e implementacion de software sobre redes IP</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/ip.jpg"/></a></svg>
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Analisis, diseño e implementacion de software sobre redes IP</h5>
               <p class="card-text">Esta nueva tecnología de telefonía existe la posibilidad de que un servidor dotado con el software adecuado sea el que implemente las funcionalidades que, en el esquema de telefonía antiguo.</p>
@@ -128,7 +128,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Redes neuronales</title><image width="1280" height="718" transform="scale(0.37 0.37)" xlink:href="<?php echo constant('URL'); ?>img/cerebro.jpg"/></a></svg>
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Redes Neuronales\Redes neuronales.pdf"><title>Redes neuronales</title><image width="1280" height="718" transform="scale(0.37 0.37)" xlink:href="<?php echo constant('URL'); ?>img/cerebro.jpg"/></a></svg>
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Redes neuronales</h5>
               <p class="card-text">Las redes neuronales artificiales son un modelo computacional el que fue evolucionando a partir de diversas aportaciones científicas que están registradas en la historia.</p>
