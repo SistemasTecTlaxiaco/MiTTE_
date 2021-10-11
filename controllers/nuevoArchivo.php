@@ -7,6 +7,7 @@ class nuevoArchivo extends Controller{
        $this->view->mensaje="";
        $this->view->nomUser=""; 
        $this->view->alerta="";
+       $this->view->notificacion=[];
     }
     function render(){
         if(isset($_SESSION['user'])){      
@@ -17,6 +18,8 @@ class nuevoArchivo extends Controller{
         $this->view->nomUser=$nom; 
         $itemDatos=$user->getPhoto($nomUser);       
         $this->view->datos=$itemDatos;  
+        $Noti=$user->getNotificaciones();       
+        $this->view->notificacion=$Noti;      
         $this->view->render('nuevo_archivo/index');
         }
         else{
@@ -53,7 +56,9 @@ class nuevoArchivo extends Controller{
         if($this->model->subir(['nombre'=>$nombre,'ruta'=>$ruta,'titulo'=>$titulo, 'autor'=> $autor,'materia' =>$materia,
         'tipo'=>$tipoA,'descripcion'=>$descripcion,'user'=>$user])){
             $actividad="Subio el archivo: ".$nombre;
+            $tipoNoti="subio un archivo";
             $this->model->activity(['actividad'=>$actividad, 'user'=>$user]);
+            $this->model->notificaciones(['user'=>$user, 'tipo'=>$tipoNoti,'leido'=>0,'fecha'=> date('l jS \of F Y h:i:s A'), 'enlace'=>$ruta]);
             $alert=' <div class="alert alert-success alert-dismissible  align-items-start d-"flex fade show" role="alert">  
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Success:">

@@ -7,6 +7,7 @@ class principal extends Controller{
         parent::__construct();
         $this->view->nomUser="";  
         $this->view->datos=[];
+        $this->view->notificacion=[];
         //echo "<p>Nuevo controlador Main</p>";
     }
     function render(){ 
@@ -17,7 +18,9 @@ class principal extends Controller{
         $nom=$user->getNombre();
         $this->view->nomUser=$nom; 
         $itemDatos=$user->getPhoto($nomUser);       
-        $this->view->datos=$itemDatos;             
+        $this->view->datos=$itemDatos;   
+        $Noti=$user->getNotificaciones();       
+        $this->view->notificacion=$Noti;             
         $this->view->render('principal/index');
     }else{
         header('Location:'.constant('URL').'errores/ErrorAcceso'); 

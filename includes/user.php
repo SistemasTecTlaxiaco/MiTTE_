@@ -1,5 +1,6 @@
 <?php
 include_once 'models/alumno.php';
+include_once 'models/notificacion.php';
 class User extends Database{
     private $nombre;
     private $correo;
@@ -36,6 +37,26 @@ class User extends Database{
         $item->foto = $row ['imagen'];            
         }
         return$item;
+    }
+    public function getNotificaciones(){     
+        $query =$this->connect()->prepare("SELECT * FROM notificaciones WHERE leido = :valor");
+        try {  
+            $notificaciones=[];
+            $valor=0;
+                $query->execute(['valor' => $valor]);
+                while ($row = $query->fetch()) {
+                    $not =new Notificacion();
+                    $not->idnoti = $row ['id_noti'];
+                    $not->usuario = $row ['usuario'];
+                    $not->tipo= $row ['tipo'];                    
+                    $not->fecha= $row ['fecha'];
+                    $not->enlace= $row ['enlace'];
+                    array_push($notificaciones,$not);
+                }
+                return $notificaciones;
+            } catch (PDOException $e) {
+                return [];
+            }
     }
 }
 

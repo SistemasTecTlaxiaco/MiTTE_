@@ -6,7 +6,8 @@ class posgrados extends Controller{
     function __construct(){
         parent::__construct();
         $this->view->nomUser="";
-        $this->view->files=[];  
+        $this->view->files=[]; 
+        $this->view->notificacion=[]; 
     }
     function render(){ 
         if(isset($_SESSION['user'])){        
@@ -20,6 +21,8 @@ class posgrados extends Controller{
         $file= new SistemaModel(); 
         $datos=$file->get();           
         $this->view->files=$datos;
+        $Noti=$user->getNotificaciones();       
+        $this->view->notificacion=$Noti;   
     $this->view->render('posgrados/index');
     }else{
         header('Location:'.constant('URL').'errores/ErrorAcceso'); 

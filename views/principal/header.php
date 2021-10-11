@@ -46,9 +46,23 @@
         <img src="<?php echo constant('URL');?>/img/noti.svg" alt="" width="32" height="32" class="rounded-circle me-2">        
       </a>
       <ul class="dropdown-menu dropdown-menu-right dropdown-menu-white text-small shadow" style="right: 0; left: auto;" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">Usted no tiene notificaciones pentientes</a></li>
-        <li><a class="dropdown-item" href="#"></a></li>
-        <li><a class="dropdown-item" href="#"></a></li>        
+      <?php
+                include_once 'models/notificacion.php';
+                if($this->notificacion==null || $this->notificacion==[]){
+                ?> 
+      <li><a class="dropdown-item" href="#">Usted no tiene notificaciones pentientes</a></li>
+      <?php } else {
+    ?>
+      <?php
+                foreach($this->notificacion as $noti){                                   
+                    $notifica=new notificacion();
+                    $notifica=$noti; 
+                    
+     ?>     
+        <li><a class="dropdown-item" href="<?php echo constant('URL').$notifica->enlace;?>">El usuario <?php echo $notifica->usuario;?> ha <?php echo $notifica->tipo;?></a></li>
+        <?php }
+        }
+    ?>            
       </ul>
     </div>
             <div class="dropdown">

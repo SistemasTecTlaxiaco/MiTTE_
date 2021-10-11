@@ -10,7 +10,8 @@ class MisArchivos extends Controller{
        $this->view->alerta2="";
        $this->view->datos=[];
        $this->view->archivo=[];  
-       $this->view->archivos=[];        
+       $this->view->archivos=[];   
+       $this->view->notificacion=[];     
     }
     function render(){
         if(isset($_SESSION['user'])){    
@@ -23,6 +24,8 @@ class MisArchivos extends Controller{
         $this->view->datos=$itemDatos; 
         $datos=$this->model->getByEmail($nomUser);
         $this->view->archivos=$datos;    
+        $Noti=$user->getNotificaciones();       
+        $this->view->notificacion=$Noti;   
         $this->view->render('mis_archivos/index');
         }
         else{
