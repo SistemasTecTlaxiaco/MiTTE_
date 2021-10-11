@@ -6,7 +6,8 @@ class proyectos extends Controller{
     function __construct(){
         parent::__construct();
         $this->view->nomUser=""; 
-        $this->view->files=[];   
+        $this->view->files=[]; 
+        $this->view->notificacion=[];  
     }
     function render(){ 
         if(isset($_SESSION['user'])){        
@@ -19,7 +20,9 @@ class proyectos extends Controller{
         $this->view->datos=$itemDatos; 
         $file= new SistemaModel(); 
         $datos=$file->get();           
-        $this->view->files=$datos;             
+        $this->view->files=$datos;  
+        $Noti=$user->getNotificaciones();       
+        $this->view->notificacion=$Noti;              
         $this->view->render('proyectos/index');
     }else{
         header('Location:'.constant('URL').'errores/ErrorAcceso'); 

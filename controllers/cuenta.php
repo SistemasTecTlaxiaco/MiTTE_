@@ -13,6 +13,7 @@ class Cuenta extends Controller{
        $this->view->alerta2="";
        $this->view->datos=[];
        $this->view->activity=[];
+       $this->view->notificacion=[];
     }
     function render(){
         if(isset($_SESSION['user'])){ 
@@ -26,6 +27,8 @@ class Cuenta extends Controller{
         $this->view->nomUser=$nom; 
         $actividades=$this->model->getDatosActividad($name);
         $this->view->activity=$actividades; 
+        $Noti=$user->getNotificaciones();       
+        $this->view->notificacion=$Noti;   
         $this->view->render('Cuenta/index');
     }else{
         header('Location:'.constant('URL').'errores/ErrorAcceso');       

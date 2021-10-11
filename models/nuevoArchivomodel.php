@@ -1,4 +1,5 @@
 <?php
+include_once 'models/notificacion.php';
 class NuevoArchivoModel extends Model{
 
     public function __construct(){
@@ -38,6 +39,36 @@ class NuevoArchivoModel extends Model{
         }catch(PDOException $e){
             return false;
         }      
+    }
+    public function notificaciones($datos){
+        try{
+       $query = $this->db->connect()->prepare('INSERT INTO notificaciones(usuario, tipo, leido, fecha, enlace) VALUES(:usuario, :tipo, :leido, :fecha, :enlace)');
+        $query->execute(['usuario' => $datos['user'],'tipo' => $datos['tipo'],'leido' => $datos['leido'],'fecha' => $datos['fecha'],'enlace' => $datos['enlace']]);  
+            return true;
+        }catch(PDOException $e){
+            return false;
+        }      
+    }
+
+    public function getNotificaciones(){     
+        $query =$this->db->connect()->prepare("SELECT * FROM notificaciones WHERE leido = :valor");
+        try {  
+            $notificaciones=[];
+            $valor=0;
+                $query->execute(['valor' => $valor]);
+                while ($row = $query->fetch()) {
+                    $not =new Notificacion();
+                    $not->idnoti = $row ['id_noti'];
+                    $not->usuario = $row ['usuario'];
+                    $not->tipo= $row ['tipo'];                    
+                    $not->fecha= $row ['fecha'];
+                    $not->enlace= $row ['enlace'];
+                    array_push($notificaciones,$not);
+                }
+                return $notificaciones;
+            } catch (PDOException $e) {
+                return [];
+            }
     }
 
 }
