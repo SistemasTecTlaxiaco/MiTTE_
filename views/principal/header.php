@@ -59,7 +59,7 @@
                     $notifica=$noti; 
                     
      ?>     
-        <li><a class="dropdown-item" href="<?php echo constant('URL').$notifica->enlace;?>"> El usuario <?php echo $notifica->usuario;?> ha <?php echo $notifica->tipo;?></a></li>
+        <li><a class="dropdown-item" href="<?php echo constant('URL').$notifica->enlace;?>" El usuario <?php echo $notifica->usuario;?> ha <?php echo $notifica->tipo;?></a></li>
         <?php }
         }
     ?>            
