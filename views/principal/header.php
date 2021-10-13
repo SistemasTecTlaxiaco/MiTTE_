@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL');?>nuevoArchivo">Subir Archivo</a></li>         
                 </ul>               
                 </div>
-            <div class="dropdown me-2">
+            <div class="dropdown me-2 d-none d-xs-inline-block">
             <form class="d-sm-inline-block" action="<?php echo constant('URL'); ?>busqueda/buscar" enctype="multipart/form-data" method="POST">
             <div class="input-group input-group-navbar">
       <input class="form-control" name="buscar" type="Search" placeholder="Buscar archivo" aria-label="Buscar">
