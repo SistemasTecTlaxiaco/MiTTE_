@@ -29,8 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL');?>posgrados">Posgrados</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL');?>proyectos">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL');?>nuevoArchivo">Subir Archivo</a></li>         
-                </ul>               
-            </div>
+                </ul> 
             </div>
             <div class="dropdown me-2">
             <form class="d-sm-inline-block" action="<?php echo constant('URL'); ?>busqueda/buscar" enctype="multipart/form-data" method="POST">
