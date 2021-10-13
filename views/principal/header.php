@@ -43,7 +43,7 @@
         <img src="<?php echo constant('URL');?>/img/mensaje.svg" alt="" width="32" height="32" class="rounded-circle me-2">        
       </a>
       <ul class="dropdown-menu dropdown-menu-right dropdown-menu-white text-small shadow" style="right: 0; left: auto;" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">Usted no tiene notificaciones pentientes</a></li>
+        <li><a class="dropdown-item" href="#">Usted no tiene mensajes</a></li>
         <li><a class="dropdown-item" href="#"></a></li>
         <li><a class="dropdown-item" href="#"></a></li>        
       </ul>
@@ -57,7 +57,7 @@
                 include_once 'models/notificacion.php';
                 if($this->notificacion==null || $this->notificacion==[]){
                 ?> 
-      <li><a class="dropdown-item" href="#">Usted no tiene notificaciones pentientes</a></li>
+      <li><a class="dropdown-item" href="#"height="32"><img src="<?php echo constant('URL'); ?>img/bloquear.svg" width="32" height="32"> Usted no tiene notificaciones pentientes</a></li>
       <?php } else {
     ?>
       <?php
@@ -66,7 +66,7 @@
                     $notifica=$noti; 
                     
      ?>     
-        <li><a class="dropdown-item" href="<?php echo constant('URL').$notifica->enlace;?>" El usuario <?php echo $notifica->usuario;?> ha <?php echo $notifica->tipo;?></a></li>
+        <li><a class="dropdown-item" href="<?php echo constant('URL').$notifica->enlace;?>"height="32"><img src="<?php echo constant('URL'); ?>img/documento.svg" width="32" height="32"> El usuario <?php echo $notifica->usuario;?> ha <?php echo $notifica->tipo;?></a></li>
         <?php }
         }
     ?>            
