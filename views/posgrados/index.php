@@ -44,9 +44,8 @@
     <div class="carousel-item active">
       <img src="<?php echo constant('URL'); ?>img/sl1-1.png" class="d-block w-100 fondo" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Introducción</h5>
-        <p>MiTTE es un espacio de integración de elementos y escenarios académicos fuera del aula virtual en el cual podrás encontrar contenido de apoyo docente y estudiantil como tutoriales y cursos que permitirán fortalecer tus conocimentos y ademàs te servirán de ayuda en la realización de trabajos o 
-proyectos educativos.</p>
+        <h5>Descripcion</h5>
+        <p>En este apartado podras encontrar todos los posgrados realizados por los ingenieros y licenciados ya egresados.</p>
       </div>
     </div>
 
