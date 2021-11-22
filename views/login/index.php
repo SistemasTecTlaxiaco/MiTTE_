@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inicio de sesion MiTTE</title>
-  <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="16x16" type="image/png">
+  <link rel="shortcut icon" href="<?php echo constant('URL');?>img/favicon.png" sizes="32x32" type="image/png">
+    <link rel="shortcut icon" href="<?php echo constant('URL');?>img/favicon.png" sizes="16x16" type="image/png">
   <link rel="stylesheet" href="<?php echo constant('URL');?>bootstrapd/css/bootstrap.min.css" crossorigin="anonymous">    
   <script src="<?php echo constant('URL');?>bootstrapd/js/bootstrap.min.js"></script>  
   <script src="<?php echo constant('URL');?>js/validar.js"></script>   

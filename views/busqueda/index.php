@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">   
     <title>Pagina principal MiTTE</title>
-    <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="<?php echo constant('URL');?>img/icono.png" sizes="16x16" type="image/png">
+    <link rel="shortcut icon" href="<?php echo constant('URL');?>img/favicon.png" sizes="32x32" type="image/png">
+    <link rel="shortcut icon" href="<?php echo constant('URL');?>img/favicon.png" sizes="16x16" type="image/png">
 <link rel="stylesheet" href="<?php echo constant('URL');?>bootstrapd/css/bootstrap.min.css" crossorigin="anonymous"> 
 <link rel="stylesheet" href="<?php echo constant('URL');?>bootstrapd/css/bootstrap.css" crossorigin="anonymous"> 
     <style>
