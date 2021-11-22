@@ -29,9 +29,8 @@
                                $bandera=false;
                                }
                      } else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(document.getElementById("correo").value)){
-                        document.getElementById("correo").style.backgroundColor='#CDE1E6';
-                        document.getElementById("correo").style.borderColor='#198754';
-                        document.getElementById("correo").style.backgroundImage= "url('img/listo.svg')";                               
+                        document.getElementById("correo").style.backgroundColor='';
+                        document.getElementById("correo").style.borderColor='#198754';                        
                         document.getElementById("correo").style.backgroundRepeat= "no-repeat";
                         document.getElementById("correo").style.backgroundPosition= "right calc(.375em + .1875rem) center";  
                        // document.getElementById("pass").style.backgroundSize= "calc(.75em + .375rem) calc(.75em + .375rem)";    
@@ -49,9 +48,8 @@
 
                      }else {
                              if(!(document.getElementById("pass").value=="")){
-                        document.getElementById("pass").style.backgroundColor='#CDE1E6';
-                        document.getElementById("pass").style.borderColor='#198754';
-                        document.getElementById("pass").style.backgroundImage= "url(img/listo.svg')";                               
+                        document.getElementById("pass").style.backgroundColor='';
+                        document.getElementById("pass").style.borderColor='#198754';                              
                         document.getElementById("pass").style.backgroundRepeat= "no-repeat";
                         document.getElementById("pass").style.backgroundPosition= "right calc(.375em + .1875rem) center"; 
                         document.getElementById("pass").style.backgroundSize= "calc(.75em + .375rem) calc(.75em + .375rem)";     
@@ -64,11 +62,5 @@
                      }                                          
                     
                 }
-                               //document.getElementById("correo").style.backgroundColor='';
-                               //document.getElementById("correo").style.borderColor='';
-                               //document.getElementById("correo").style.backgroundImage= "";                               
-                               //document.getElementById("correo").style.backgroundRepeat= "";
-                               //document.getElementById("correo").style.backgroundPosition= "";                            
-                               //document.getElementById("pass").style.backgroundColor='';   
-              // return true;	            
+                                          
            }
