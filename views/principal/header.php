@@ -40,14 +40,46 @@
     </div>
 </div>
             <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none" data-toggle="collapse" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="<?php echo constant('URL');?>/img/mensaje.svg" alt="" width="32" height="32" class="rounded-circle me-2">        
-      </a>
-      <ul class="dropdown-menu dropdown-menu-right dropdown-menu-white text-small shadow" style="right: 0; left: auto;" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">Usted no tiene mensajes</a></li>
-        <li><a class="dropdown-item" href="#"></a></li>
-        <li><a class="dropdown-item" href="#"></a></li>        
-      </ul>
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none" data-toggle="collapse" id="messagesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+ 
+ <img src="<?php echo constant('URL');?>/img/mensaje.svg" alt="" width="32" height="32" class="rounded-circle me-2"> 
+ </a>
+      <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown" data-bs-popper="none">
+           <div class="dropdown-menu-header">
+             <div class="position-relative"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+               2 mensajes nuevos
+             </font></font></div>
+           </div>
+           <div class="list-group">
+             <a href="#" class="list-group-item">
+               <div class="row g-0 align-items-center">
+                 <div class="col-2">
+                   <img src="<?php echo $this->datos->foto?>" class="avatar img-fluid rounded-circle" alt="Antonio Cruz">
+                 </div>
+                 <div class="col-10 ps-2">
+                   <div class="text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antonio Cruz Chavez</font></font></div>
+                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cual es el proyecto? </font><font style="vertical-align: inherit;"></font></font></div>
+                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hace 15m</font></font></div>
+                 </div>
+               </div>
+             </a>
+             <a href="#" class="list-group-item">
+               <div class="row g-0 align-items-center">
+                 <div class="col-2">
+                   <img src="<?php echo $this->datos->foto?>" class="avatar img-fluid rounded-circle" alt="David Juan">
+                 </div>
+                 <div class="col-10 ps-2">
+                   <div class="text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">David Juan</font></font></div>
+                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Revisa las Asignaciones.</font></font></div>
+                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hace 2h</font></font></div>
+                 </div>
+               </div>
+             </a>																
+           </div>
+           <div class="dropdown-menu-footer">
+             <a href="#" class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mostrar todos los mensajes</font></font></a>
+           </div>
+         </div>     
     </div>
             <div class="dropdown">
       <a href="#" class="d-flex align-items-center text-white text-decoration-none" data-toggle="collapse" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
