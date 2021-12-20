@@ -117,24 +117,7 @@ class nuevoArchivo extends Controller{
             $this->render(); 
         }   
                
-    }
-    function upload(){ 
-        $temp='../../../temp/';
-        if(!file_exists($temp)){        
-            mkdir($temp,0777,true);
-        }     
-          $nombre=$_FILES['archivo']['name'];
-          $tipo=$_FILES['archivo']['type'];
-          $size=$_FILES['archivo']['size'];
-          $rutatemp=$_FILES['archivo']['tmp_name'];
-          echo $tipo; 
-          //echo $rutatemp;
-         // $destino=$_SERVER['DOCUMENT_ROOT'].'/sistema2'.'/MiTTE'.'/'.'uploads/';
-         // move_uploaded_file($rutatemp,$destino.$nombre);
-    
-        $this->render();   
-    }
-    
-   
-}
+    }      
+  }
+  }
 ?>
