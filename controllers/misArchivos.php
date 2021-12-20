@@ -137,7 +137,19 @@ function updateA(){
           $rutatemp=$_FILES['archivo']['tmp_name']; 
           $user=$_SESSION['user']; 
           $id=$this->model->getId($user);  
-          $destino=$_SERVER['DOCUMENT_ROOT'].'/sistema2'.'/MiTTE_'.'/'.'uploads/file/'.$id->id.'/';
+          $S3Options = 
+          [
+              'version' => 'latest',
+              'region'  => 'us-east-2',
+              'credentials' => 
+              [
+                  'key' => $cli->clave,
+                  'secret' => $cli->secret
+              ],
+              'scheme' => 'http'
+          ];   
+          $s3 = new S3Client($S3Options);
+
           if($nombre==null){
             $alert='<div class="alert alert-danger alert-dismissible align-items-center d-flex fade show" role="alert">  
       <div>
@@ -155,8 +167,13 @@ function updateA(){
           else
           if($tamano>0 && $tamano<=2099879){
             if($tipo=="application/pdf"||$tipo=="application/vnd.openxmlformats-officedocument.wordprocessingml.document"||$tipo=="application/vnd.openxmlformats-officedocument.presentationml.presentation"){
-          move_uploaded_file($rutatemp,$destino.$nombre);          
-          $ruta='/uploads/file/'.$id->id.'/'.$nombre;  
+              $uploadObject = $s3->putObject(
+                [
+                  'Bucket' => 'mitte-archivos',
+                  'Key' => $_FILES['archivo']['name'],
+                  'SourceFile' => $_FILES['archivo']['tmp_name']
+                ]);  
+                   $ruta = $s3->getObjectUrl('mitte-archivos', $nombre);
         if($this->model->UpdateFile(['nombre'=>$nombre,'ruta'=>$ruta,'nombreOld'=>$nombrefileOld])){
           if($nombrefileOld!=$nombre){
           unlink( $rutafileOld); 
