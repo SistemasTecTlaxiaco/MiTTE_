@@ -1,5 +1,6 @@
 <?php
 include_once 'models/archivo.php';
+include_once 'models/sistema.php';
     class  MisArchivosModel extends Model{
         public function __construct() {
             parent:: __construct();
@@ -127,7 +128,20 @@ include_once 'models/archivo.php';
                 return false;
             }      
         }
-    
+        public function secret($id){
+            $cli =new Sistema();
+            $query =$this->db->connect()->prepare("SELECT * FROM s3 WHERE id = :id");
+            try {  
+                    $query->execute(['id' => $id]);
+                    while ($row = $query->fetch()) {                        
+                    $cli->clave = $row ['clave'];                     
+                    $cli->secret= $row ['secret'];                       
+                }
+                return $cli;
+            } catch (PDOException $e) {
+                return [];
+            } 
+        }
     }
 
 ?>
