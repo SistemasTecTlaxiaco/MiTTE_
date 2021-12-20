@@ -41,15 +41,13 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div class="carousel-inner">    
       <img src="<?php echo constant('URL'); ?>img/sl6.png" class="d-block w-100 fondo" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Descripcion</h5>
         <p>En este apartado encontraras una variedad de investigaciones y tesis echas por estudiantes universitarios (Ingenieria y licenciatura).</p>
       </div>
-    </div>
-    <div class="carousel-item">
+    </div>  
   </section>
 
   <div class="album py-5">
