@@ -43,13 +43,12 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo constant('URL'); ?>img/sl5.png" class="d-block w-100 fondo" alt="...">
+      <img src="<?php echo constant('URL'); ?>img/sl5.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Descripcion</h5>
         <p>En este apartado encontraras una variedad de investigaciones y tesis echas por estudiantes universitarios (Ingenieria y licenciatura).</p>
       </div>
-    </div>
-    <div class="carousel-item">
+    </div> 
   </section>
   <div class="album py-5">
     <div class="container">
