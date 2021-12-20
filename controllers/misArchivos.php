@@ -1,6 +1,9 @@
 <?php
 session_start();
 include_once 'includes/user.php';
+require('composer/vendor/autoload.php');
+use Aws\S3\S3Client; 
+use Aws\Exception\AwsException;
 class MisArchivos extends Controller{
     function __construct(){
         parent::__construct();
