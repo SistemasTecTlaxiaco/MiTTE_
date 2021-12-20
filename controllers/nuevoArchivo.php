@@ -1,6 +1,9 @@
 <?php
 session_start();
 include_once 'includes/user.php';
+require('composer/vendor/autoload.php');
+use Aws\S3\S3Client; 
+use Aws\Exception\AwsException;
 class nuevoArchivo extends Controller{
     function __construct(){
         parent::__construct();
@@ -36,23 +39,34 @@ class nuevoArchivo extends Controller{
         $user=$_SESSION['user']; 
         $temp='../../../temp/';
         $file='uploads/file/';
-        $id=$this->model->getId($user);
-        $usuario=$file.$id->id.'/';   
-        if(!file_exists($temp)){        
-            mkdir($temp,0777,true);
-        } 
-            if(!file_exists($usuario)){        
-                mkdir($usuario,0777,true);
-            }       
+        $id=101;
+        $cli=$this->model->secret($id); 
+        $S3Options = 
+        [
+            'version' => 'latest',
+            'region'  => 'us-east-2',
+            'credentials' => 
+            [
+                'key' => $cli->clave,
+                'secret' => $cli->secret
+            ],
+            'scheme' => 'http'
+        ];   
+        $s3 = new S3Client($S3Options);         
+        if(!file_exists($temp)){ 
           $nombre=$_FILES['archivo']['name'];
           $tipo=$_FILES['archivo']['type'];
           $tamano=$_FILES['archivo']['size'];
-          $rutatemp=$_FILES['archivo']['tmp_name'];      
-          $destino=$_SERVER['DOCUMENT_ROOT'].'/sistema2'.'/MiTTE_'.'/'.'uploads/file/'.$id->id.'/';
+          $rutatemp=$_FILES['archivo']['tmp_name'];
           if($tamano>0 && $tamano<=2099879){
             if($tipo=="application/pdf"||$tipo=="application/vnd.openxmlformats-officedocument.wordprocessingml.document"||$tipo=="application/vnd.openxmlformats-officedocument.presentationml.presentation"){
-          move_uploaded_file($rutatemp,$destino.$nombre);  
-          $ruta='/'.$file.$id->id.'/'.$nombre;  
+              $uploadObject = $s3->putObject(
+                [
+                  'Bucket' => 'mitte-archivos',
+                  'Key' => $_FILES['archivo']['name'],
+                  'SourceFile' => $_FILES['archivo']['tmp_name']
+                ]);  
+                   $ruta = $s3->getObjectUrl('mitte-archivos', $nombre);  
         if($this->model->subir(['nombre'=>$nombre,'ruta'=>$ruta,'titulo'=>$titulo, 'autor'=> $autor,'materia' =>$materia,
         'tipo'=>$tipoA,'descripcion'=>$descripcion,'user'=>$user])){
             $actividad="Subio el archivo: ".$nombre;
