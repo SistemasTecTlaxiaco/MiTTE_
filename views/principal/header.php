@@ -44,8 +44,7 @@
  
  <img src="<?php echo constant('URL');?>/img/mensaje.svg" alt="" width="32" height="32" class="rounded-circle me-2"> 
  </a>
-      <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown" data-bs-popper="none">
-           <div class="dropdown-menu-header">
+   
            <ul class="dropdown-menu dropdown-menu-right dropdown-menu-white text-small shadow" style="right: 0; left: auto;" aria-labelledby="dropdownUser1">
       <?php
                 include_once 'models/notificacion.php';
@@ -65,8 +64,7 @@
         <?php }
         }
     ?>            
-      </ul>
-         </div>     
+      </ul>    
     </div>
             <div class="dropdown">
       <a href="#" class="d-flex align-items-center text-white text-decoration-none" data-toggle="collapse" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
