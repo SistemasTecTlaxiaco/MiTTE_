@@ -46,15 +46,26 @@
  </a>
       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown" data-bs-popper="none">
            <div class="dropdown-menu-header">
-             <div class="position-relative"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-               2 mensajes nuevos
-             </font></font></div>
-           </div>
-           <div class="list-group">															
-           </div>
-           <div class="dropdown-menu-footer">
-             <a href="#" class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mostrar todos los mensajes</font></font></a>
-           </div>
+           <ul class="dropdown-menu dropdown-menu-right dropdown-menu-white text-small shadow" style="right: 0; left: auto;" aria-labelledby="dropdownUser1">
+      <?php
+                include_once 'models/notificacion.php';
+                if($this->notificacion==null || $this->notificacion==[]){
+                ?> 
+      <li><a class="dropdown-item" href="#">Usted no tiene notificaciones pentientes</a></li>
+      <?php } else {
+    ?>
+      <?php
+                foreach($this->notificacion as $noti){                                   
+                    $notifica=new notificacion();
+                    $notifica=$noti; 
+                    
+     ?>     
+        <li> 
+          <a class="dropdown-item" href="<?php echo $notifica->enlace;?>" height="32"><img src="<?php echo constant('URL'); ?>img/documento.svg" width="32" height="32"> El usuario <?php echo $notifica->usuario;?> ha <?php echo $notifica->tipo;?></a></li>
+        <?php }
+        }
+    ?>            
+      </ul>
          </div>     
     </div>
             <div class="dropdown">
