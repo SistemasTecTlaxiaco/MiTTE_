@@ -56,7 +56,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4  g-3">
         <div class="col">
           <div class="card shadow-sm">   
-             <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479.44 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>JavaScript.pdf</title><image width="1000" height="420" transform="scale(0.48 0.61)" xlink:href="<?php echo constant('URL'); ?>img/10.jpeg"/></a></svg>
+             <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479.44 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Lenguaje-de-programacion-JavaScript-1\Lenguaje-de-programacion-JavaScript-1.pdf"><title>JavaScript.pdf</title><image width="1000" height="420" transform="scale(0.48 0.61)" xlink:href="<?php echo constant('URL'); ?>img/10.jpeg"/></a></svg>
              <div class="card-body">
             <h5 class="card-title" style="text-align: center;">JavaScript.pdf</h5>
               <p class="card-text">JavaScript es uno de los lenguajes mas utilizados hoy en dia para la programacion de eventos y funciones.</p>
@@ -71,7 +71,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 253" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Investigacion de fractales.pdf</title><image width="1280" height="960" transform="scale(0.37 0.27)" xlink:href="<?php echo constant('URL'); ?>img/11.jpeg"/></a></svg>          
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 253" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Lenguaje-de-programacion-JavaScript-1\Lenguaje-de-programacion-JavaScript-1.pdf"><title>Investigacion de fractales.pdf</title><image width="1280" height="960" transform="scale(0.37 0.27)" xlink:href="<?php echo constant('URL'); ?>img/11.jpeg"/></a></svg>          
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Investigacion de fractales.pdf</h5>
               <p class="card-text">Un fractal es un objeto geométrico cuya estructura básica, fragmentada o aparentemente irregular, se repite a diferentes escalas.</p>
@@ -87,7 +87,7 @@
         <div class="col">
           <div class="card shadow-sm">
             <img class="bd-placeholder-img card-img-top" href= "<?php echo constant('URL'); ?>img/c.svg"></img>
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Usos de cajas.pdf</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/t2.jpg"/></a></svg> 
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Lenguaje-de-programacion-JavaScript-1\Lenguaje-de-programacion-JavaScript-1.pdf"><title>Usos de cajas.pdf</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/t2.jpg"/></a></svg> 
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Usos de cajas.pdf</h5>
               <p class="card-text">CSS es un lenguaje que define la apariencia de un documento escrito en un lenguaje de Hipertextos incluyendo varios languages basados en XML.</p>
@@ -103,7 +103,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Usos de cajas.pdf</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/t1.png"/></a></svg>
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Lenguaje-de-programacion-JavaScript-1\Lenguaje-de-programacion-JavaScript-1.pdf"><title>Usos de cajas.pdf</title><image width="1200" height="627" transform="scale(0.4 0.41)" xlink:href="<?php echo constant('URL'); ?>img/t1.png"/></a></svg>
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Importacia y uso de HTML5.pdf</h5>
               <p class="card-text">Es un lenguaje con elementos que dan estructura a una página web y mejora la organización del contenido (en su mas reciente version).</p>
@@ -118,7 +118,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Manual de Laravel.pdf</title><image width="1280" height="720" transform="scale(0.37 0.35)" xlink:href="<?php echo constant('URL'); ?>img/t3.jpg"/></a></svg>
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 474 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Lenguaje-de-programacion-JavaScript-1\Lenguaje-de-programacion-JavaScript-1.pdf"><title>Manual de Laravel.pdf</title><image width="1280" height="720" transform="scale(0.37 0.35)" xlink:href="<?php echo constant('URL'); ?>img/t3.jpg"/></a></svg>
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">Manual de Laravel.pdf</h5>
               <p class="card-text">Laravel es un framework de código abierto para desarrollar aplicaciones y servicios web con PHP 5, PHP 7 y PHP 8.</p>
@@ -133,7 +133,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="#"><title>Usos de cajas.pdf</title><image width="700" height="368" transform="scale(0.68 0.69)" xlink:href="<?php echo constant('URL'); ?>img/t4.jpg"/></a></svg>
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo constant('URL'); ?>uploads\file\Investigacion Lenguaje-de-programacion-JavaScript-1\Lenguaje-de-programacion-JavaScript-1.pdf"><title>Usos de cajas.pdf</title><image width="700" height="368" transform="scale(0.68 0.69)" xlink:href="<?php echo constant('URL'); ?>img/t4.jpg"/></a></svg>
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;">PHP para principiantes.pdf</h5>
               <p class="card-text">PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.</p>
@@ -154,7 +154,7 @@
      ?>
      <div class="col">
           <div class="card shadow-sm">
-          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo $this->archivo->ruta;?>"><title><?php echo $archivo->nombre;?></title><image width="870" height="522" transform="scale(0.68 0.69)" xlink:href="<?php echo constant('URL'); ?>img/investigaciones.jpg"/></a></svg>
+          <svg id="Capa_1" class="bd-placeholder-img card-img-top" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 479 255" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><a href="<?php echo $archivo->ruta;?>"><title><?php echo $archivo->nombre;?></title><image width="870" height="522" transform="scale(0.68 0.69)" xlink:href="<?php echo constant('URL'); ?>img/investigaciones.jpg"/></a></svg>
             <div class="card-body">
             <h5 class="card-title" style="text-align: center;"><?php echo $archivo->titulo;?></h5>
               <p class="card-text"><?php echo $archivo->descripcion;?></p>
