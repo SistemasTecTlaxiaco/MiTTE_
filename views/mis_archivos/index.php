@@ -106,7 +106,7 @@
           <span class="d-block"><?php echo $archivo->fecha;?></span>
           </div>
           <div class="align-items-end">
-          <a href="<?php echo constant('URL').$archivo->ruta;?>">Abrir</a>                   
+          <a href="<?php echo $archivo->ruta;?>">Abrir</a>                   
           <a href="<?php echo constant('URL').'misArchivos/Datos/'.$archivo->nombre;?>">Actualizar</a>
           <a href="<?php echo constant('URL').'misArchivos/eliminar/'.$archivo->nombre;?>">Eliminar</a>
          </div>
