@@ -11,6 +11,7 @@ class Cuenta extends Controller{
        $this->view->nomUser=""; 
        $this->view->alerta="";
        $this->view->alerta2="";
+       $this->view->numero="";
        $this->view->datos=[];
        $this->view->activity=[];
        $this->view->notificacion=[];
@@ -27,7 +28,9 @@ class Cuenta extends Controller{
         $this->view->nomUser=$nom; 
         $actividades=$this->model->getDatosActividad($name);
         $this->view->activity=$actividades; 
-        $Noti=$user->getNotificaciones();       
+        $Noti=$user->getNotificaciones();
+        $num= $user->getNumero();            
+        $this->view->numero=$num;         
         $this->view->notificacion=$Noti;   
         $this->view->render('Cuenta/index');
     }else{

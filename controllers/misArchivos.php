@@ -11,6 +11,7 @@ class MisArchivos extends Controller{
        $this->view->nomUser=""; 
        $this->view->alerta="";
        $this->view->alerta2="";
+       $this->view->numero="";
        $this->view->datos=[];
        $this->view->archivo=[];  
        $this->view->archivos=[];   
@@ -27,7 +28,9 @@ class MisArchivos extends Controller{
         $this->view->datos=$itemDatos; 
         $datos=$this->model->getByEmail($nomUser);
         $this->view->archivos=$datos;    
-        $Noti=$user->getNotificaciones();       
+        $Noti=$user->getNotificaciones(); 
+        $num= $user->getNumero();            
+        $this->view->numero=$num;        
         $this->view->notificacion=$Noti;   
         $this->view->render('mis_archivos/index');
         }

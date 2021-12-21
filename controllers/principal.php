@@ -5,7 +5,8 @@ include_once 'includes/user.php';
 class principal extends Controller{
     function __construct(){
         parent::__construct();
-        $this->view->nomUser="";  
+        $this->view->nomUser=""; 
+        $this->view->numero=""; 
         $this->view->datos=[];
         $this->view->notificacion=[];
         //echo "<p>Nuevo controlador Main</p>";
@@ -19,7 +20,9 @@ class principal extends Controller{
         $this->view->nomUser=$nom; 
         $itemDatos=$user->getPhoto($nomUser);       
         $this->view->datos=$itemDatos;   
-        $Noti=$user->getNotificaciones();       
+        $Noti=$user->getNotificaciones(); 
+        $num= $user->getNumero();            
+        $this->view->numero=$num;        
         $this->view->notificacion=$Noti;             
         $this->view->render('principal/index');
     }else{
