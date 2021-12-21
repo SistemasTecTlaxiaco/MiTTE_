@@ -50,31 +50,7 @@
                2 mensajes nuevos
              </font></font></div>
            </div>
-           <div class="list-group">
-             <a href="#" class="list-group-item">
-               <div class="row g-0 align-items-center">
-                 <div class="col-2">
-                   <img src="<?php echo $this->datos->foto?>" class="avatar img-fluid rounded-circle" alt="Antonio Cruz">
-                 </div>
-                 <div class="col-10 ps-2">
-                   <div class="text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antonio Cruz Chavez</font></font></div>
-                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cual es el proyecto? </font><font style="vertical-align: inherit;"></font></font></div>
-                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hace 15m</font></font></div>
-                 </div>
-               </div>
-             </a>
-             <a href="#" class="list-group-item">
-               <div class="row g-0 align-items-center">
-                 <div class="col-2">
-                   <img src="<?php echo $this->datos->foto?>" class="avatar img-fluid rounded-circle" alt="David Juan">
-                 </div>
-                 <div class="col-10 ps-2">
-                   <div class="text-dark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">David Juan</font></font></div>
-                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Revisa las Asignaciones.</font></font></div>
-                   <div class="text-muted small mt-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hace 2h</font></font></div>
-                 </div>
-               </div>
-             </a>																
+           <div class="list-group">															
            </div>
            <div class="dropdown-menu-footer">
              <a href="#" class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mostrar todos los mensajes</font></font></a>
