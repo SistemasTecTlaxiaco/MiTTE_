@@ -6,6 +6,7 @@ class proyectos extends Controller{
     function __construct(){
         parent::__construct();
         $this->view->nomUser=""; 
+        $this->view->numero="";
         $this->view->files=[]; 
         $this->view->notificacion=[];  
     }
@@ -21,7 +22,9 @@ class proyectos extends Controller{
         $file= new SistemaModel(); 
         $datos=$file->get();           
         $this->view->files=$datos;  
-        $Noti=$user->getNotificaciones();       
+        $Noti=$user->getNotificaciones();    
+        $num= $user->getNumero();            
+        $this->view->numero=$num;     
         $this->view->notificacion=$Noti;              
         $this->view->render('proyectos/index');
     }else{

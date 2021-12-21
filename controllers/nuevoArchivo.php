@@ -10,6 +10,7 @@ class nuevoArchivo extends Controller{
        $this->view->mensaje="";
        $this->view->nomUser=""; 
        $this->view->alerta="";
+       $this->view->numero="";
        $this->view->notificacion=[];
     }
     function render(){
@@ -21,7 +22,9 @@ class nuevoArchivo extends Controller{
         $this->view->nomUser=$nom; 
         $itemDatos=$user->getPhoto($nomUser);       
         $this->view->datos=$itemDatos;  
-        $Noti=$user->getNotificaciones();       
+        $Noti=$user->getNotificaciones();  
+        $num= $user->getNumero();            
+        $this->view->numero=$num;       
         $this->view->notificacion=$Noti;      
         $this->view->render('nuevo_archivo/index');
         }

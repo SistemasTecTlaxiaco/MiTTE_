@@ -58,6 +58,12 @@ class User extends Database{
                 return [];
             }
     }
+    public function getNumero(){
+        $sql = $this->connect()->prepare("SELECT COUNT(*) FROM notificaciones");      
+        $sql->execute(); 
+        $count = $sql->fetchColumn();        
+        return $count;
+    }
 }
 
 ?>
