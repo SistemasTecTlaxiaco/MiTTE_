@@ -60,7 +60,7 @@
                     
      ?>     
         <li> 
-          <a class="dropdown-item" href="<?php echo $notifica->enlace;?>" height="32"><img src="<?php echo constant('URL'); ?>img/documento.svg" width="32" height="32"> El usuario <?php echo $notifica->usuario;?> ha <?php echo $notifica->tipo;?></a></li>
+        <li><a class="dropdown-item" href="#">Usted no tiene notificaciones pentientes</a></li>
         <?php }
         }
     ?>            
